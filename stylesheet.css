@@ -4,23 +4,23 @@
     justify-content: center;
     background: eggshell;
     text-align: center;
-    /* border: 5px solid #ad2167; */
     top: 0px;
     bottom: 0px;
     right: 0px;
     left: 0px;
     height: 100%;
+    /* border: 5px solid #ad2167; */
 }
 
 .Nav {
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: auto;
-    /* border: 3px solid #73AD21; */
     top: 35px;
     left: -25px;
     width: 100%;
+    /* border: 3px solid #73AD21; */
 }
 
 .Nav ul li {
@@ -33,23 +33,20 @@
 
 .Blog {
     position: absolute;
-    top: 80px;
+    top: 85px;
     width: 98%;
     margin: 2px;
-    height: 85%;
+    height: 84%;
     display: flex;
     border: 3px solid #11e41c;
 }
 
 .Channels {
-    /* display: table-row; */
-    /* position: absolute; */
     margin: 3px;
     padding: 5px;
     top: 100px;
     width: 25%;
     height: 95%;
-    /* float: left; */
     overflow-y: auto;
     border: 3px solid #11e4d9;
 }
@@ -63,7 +60,6 @@
     width: 75%;
     height: 95%;
     float: right;
-    /* overflow-y: auto; */
     border: 3px solid #e4117b;
 }
 
