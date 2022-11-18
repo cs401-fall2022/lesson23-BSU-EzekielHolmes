@@ -27,9 +27,31 @@
         </div>
         <div class="Posts" id="Posts">
             <div class="Content" id="Content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptas ipsum iure. Unde quis optio quibusdam tempore neque ipsum! Suscipit magni esse tempora sunt, dolores molestias sed voluptas deserunt nam!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolor consequatur quae veritatis id itaque dignissimos aliquam nisi, voluptas officia placeat saepe unde harum expedita. Possimus voluptatem sunt eos reprehenderit?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolor consequatur quae veritatis id itaque dignissimos aliquam nisi, voluptas officia placeat saepe unde harum expedita. Possimus voluptatem sunt eos reprehenderit?</p>
+                <ul>
+                {% for txt in data%}
+                <ul> {{txt.blog_txt}} </ul>
+                {% endfor%}
+                </ul>
+
+                <form action="/add" method="POST">
+                    <div>
+                        <label for="blog">Blog entry</label>
+                        <input name="blog" id="blog">
+                    </div>
+                    <div>
+                        <button>Post</button>
+                    </div>
+                </form>
+                <form action="/delete" method="POST">
+                    <div>
+                        <label for="blog">Blog to delete?</label>
+                        <input name="blog" id="blog" value="1">
+                    </div>
+                    <div>
+                        <button>Delete</button>
+                    </div>
+                </form>
+
             </div>
             <div class="Comments" id="Comments">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptas ipsum iure. Unde quis optio quibusdam tempore neque ipsum! Suscipit magni esse tempora sunt, dolores molestias sed voluptas deserunt nam!</p>
