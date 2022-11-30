@@ -11,6 +11,7 @@ router.get('/', function (req, res, next) {
         console.log("Getting error " + err);
         exit(1);
       }
+      // db.exec('DROP TABLE blog;');
       //Query if the table exists if not lets create it on the fly!
       db.all(`SELECT name FROM sqlite_master WHERE type='table' AND name='blog'`,
         (err, rows) => {

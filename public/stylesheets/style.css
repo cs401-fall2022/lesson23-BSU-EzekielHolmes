@@ -12,7 +12,7 @@
   /* border: 5px solid #ad2167; */
 }
 
-.Nav {
+/* .Nav {
   position: relative;
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@
   top: 35px;
   left: -25px;
   width: 100%;
-  /* border: 3px solid #73AD21; */
+  border: 3px solid #73AD21;
 }
 
 .Nav ul li {
@@ -28,20 +28,20 @@
   flex-grow: 1;
   margin: 20px 5px;
   padding: 5px 0px 5px;
-  /* border: 3px solid #e46511; */
-}
+  border: 3px solid #e46511;
+} */
 
 .Blog {
   position: absolute;
-  top: 85px;
+  top: 35px;
   width: 98%;
   margin: 2px;
-  height: 84%;
+  height: 90%;
   display: flex;
   border: 3px solid #11e41c;
 }
 
-.Channels {
+/* .Channels {
   margin: 3px;
   padding: 5px;
   top: 100px;
@@ -49,40 +49,45 @@
   height: 95%;
   overflow-y: auto;
   border: 3px solid #11e4d9;
-}
+} */
 
 .Posts {
   margin: 3px;
+  position: relative;
+  /* left: -100px; */
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
-  top: 100px;
-  width: 75%;
+  /* top: 100px; */
+  width: 100%;
   height: 95%;
-  float: right;
+  float: left;
   border: 3px solid #e4117b;
 }
 
 .Content {
-  height: 50%;
-  width: 100%;
+  height: 75%;
+  width: 150%;
+  position: relative;
+  /* left: -60px; */
+  /* top: 5px; */
   margin: 2px;
+  float: right;
   overflow-y: auto;
   border: 3px solid #e4117b;
+}
+
+.Content ul {
+  position: relative;
+  left: -35px;
 }
 
 .Comments {
   position: relative;
-  height: 45%;
+  height: 20%;
+  /* top: 5px; */
   width: 100%;
   margin: 2px;
   overflow-y: auto;
   border: 3px solid #e4117b;
 }
-
-/* .Nav ul li a:link {
-  position: relative;
-  color:rgb(0, 47, 255);
-  padding: 10px 20px 4px 5px;
-  border: 3px solid #e0e411;
-} */
